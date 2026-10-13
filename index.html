@@ -48,6 +48,9 @@
   nav.scrolled{background:rgba(255,255,255,0.85) !important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 8px 24px -16px rgba(13,21,38,0.35);}
   .scroll-progress{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,#16a34a,#4ade80);transform-origin:0 50%;transform:scaleX(0);z-index:60;pointer-events:none;}
 
+  .brand > span{transition:transform .25s ease;}
+  .brand:hover{color:#12151c;}
+  .brand:hover > span{transform:rotate(-4deg) scale(1.06);}
   .btn{transition:background .25s ease,transform .25s ease,box-shadow .25s ease;}
   .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -10px rgba(22,163,74,0.6);}
   .btn:active{transform:translateY(0);}
@@ -149,7 +152,7 @@
     [style*="padding: 20px 64px"]{padding:14px 24px !important;}
     [style*="padding: 24px 64px"]{padding:20px 24px !important;flex-direction:column;gap:10px;}
     h1{font-size:36px !important;}
-    nav a:not(.btn){display:none;}
+    nav a:not(.btn):not(.brand){display:none;}
     #reference > .wrap > div{padding-left:24px !important;padding-right:24px !important;}
     .ref-scroll{margin:0 !important;}
   }
@@ -164,9 +167,9 @@
   <!-- NAV -->
   <nav style="width: 100%; box-sizing: border-box; display: flex; justify-content: center; background: #ffffff; border-bottom: 1px solid #eceff2;">
     <div class="wrap" style="padding: 20px 64px; display: flex; align-items: center; justify-content: space-between;">
-      <div style="display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.03em; text-transform: uppercase;"><span style="height: 26px; padding: 0 9px; border-radius: 8px; background: rgb(22, 163, 74); display: inline-flex; align-items: center; justify-content: center; color: rgb(255, 255, 255); font-size: 13px; text-transform: none; letter-spacing: 0.01em;">Jarda</span>
+      <a href="#" class="brand" aria-label="Na úvod" style="display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.03em; text-transform: uppercase; color: #12151c;"><span style="height: 26px; padding: 0 9px; border-radius: 8px; background: rgb(22, 163, 74); display: inline-flex; align-items: center; justify-content: center; color: rgb(255, 255, 255); font-size: 13px; text-transform: none; letter-spacing: 0.01em;">Jarda</span>
         Obchod &amp; realizace
-      </div>
+      </a>
       <div style="display: flex; align-items: center; gap: 32px; font-size: 14px; font-weight: 500;">
         <a href="#jak-pracuji" style="color: #12151c;">Jak pracuji</a>
         <a href="#co-resim" style="color: #12151c;">Oblasti</a>
