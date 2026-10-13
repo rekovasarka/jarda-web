@@ -1,0 +1,10 @@
+# Do repozitáře (a tedy na web) jde jen to, co stránka potřebuje.
+# Vše ostatní (originál fotky, poznámky, ZIPy, pracovní stránky) zůstává jen lokálně.
+/*
+!/index.html
+!/assets/
+!/CNAME
+!/.gitignore
+
+# stará fotka, web ji už nepoužívá
+/assets/jarda.png
